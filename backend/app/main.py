@@ -8,7 +8,10 @@ app = FastAPI(title="Phishing Detector API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://phishing-detector-lake.vercel.app/",  # ganti sesuai domain Vercel asli kamu
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
