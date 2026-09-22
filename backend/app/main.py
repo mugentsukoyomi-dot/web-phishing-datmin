@@ -10,7 +10,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://phishing-detector-lake.vercel.app/",  # ganti sesuai domain Vercel asli kamu
+        "https://phishing-detector-lake.vercel.app",  # ✅ tanpa "/" di akhir
     ],
     allow_credentials=True,
     allow_methods=["*"],
